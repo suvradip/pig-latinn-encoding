@@ -6,10 +6,10 @@
    "scripts": {
       "start": "node src/run.js",
       "lint": "eslint '**/*.{js}' --quiet --fix",
-      "format": "prettier --write '**/*.{js,html,css}'"
+      "format": "prettier --write '**/*.{js}'"
    },
    "lint-staged": {
-      "*.{js,html,csss}": [
+      "*.{js}": [
          "eslint --fix",
          "prettier --config ./.prettierrc --write",
          "git add"

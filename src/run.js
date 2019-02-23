@@ -8,6 +8,8 @@ const inputFileName = 'book.txt';
 const outputLocation = path.resolve(__dirname, '..', 'temp');
 const outputFileName = `${outputLocation}/parse.txt`;
 
+const isAlgo = process.argv[2] || false;
+
 if (!fs.existsSync(outputLocation)) fs.mkdirSync(outputLocation);
 if (fs.existsSync(outputFileName)) fs.unlinkSync(outputFileName);
 
@@ -15,7 +17,7 @@ const operation = (lines, forkNumber) =>
    new Promise((resolve, reject) => {
       try {
          const compute = fork(path.resolve(__dirname, 'translate.js'));
-         compute.send({ lines, forkNumber });
+         compute.send({ lines, forkNumber, isAlgo });
          compute.on('message', result => {
             resolve(result);
          });
