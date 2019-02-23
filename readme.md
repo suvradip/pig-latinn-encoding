@@ -1,10 +1,12 @@
-# Pig Latinn Encoding
+# Pig Latin Encoding
+
+> Project Repository Link [Pig Latin](https://gitlab.com/suvradip/pig-latinn-encoding)
 
 ## Tasks have been completed
 
--  Each node process hasn’t use more than 50M RAM usage.
+-  Each node process hasn’t used more than 50M RAM usage.
 
--  Prrinted the execution time.
+-  Printed the execution time.
 
 -  Output to a single text file.
 
@@ -12,36 +14,41 @@
 
 ## Setup and instruction
 
-#### Setup
+**Setup**
 
-you need to install `nodejs` & `npm` in your system to run this project. Once you have install the nodejs and npm in your system, you need to install the project dependencies.
+you need to install `nodejs` & `npm` in your system to run this project. Once you have installed the nodejs and npm in your system, you need to install the project dependencies.
 
-This project is depend on text file which is stored in **pdf** folder.
+This project depends on a text file which is stored in **pdf** folder.
 
-#### Instruction
+**Instruction**
 
-Run this command in project root
+Run this command in the project root
 
 ```bash
 npm i
 ```
 
-## Runnung project
+## Running project
 
-Run this command in project root
+Run this command in the project root
 
 ```bash
 npm start
 ```
 
-See the temp folder for output file.
+See the temp folder for the output file.
 
 ## Optional
 
-I have implemented extra logic for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin). For words that begin with consonant sounds, all letters before the initial vowel are placed at the end of the word sequence. Then, "ay" is added, as in the following examples.
+I have implemented extra logic for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin). For words that begin with consonant sounds, all letters before the initial vowel are placed at the end of the word sequence. Then, "ay" is added.
 
-Run this command in project root
+Run this command in the project root
 
 ```bash
 npm start -- algo
 ```
+
+---
+
+### Contact
+My [GitHub](https://github.com/suvradip)
