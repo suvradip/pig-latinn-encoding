@@ -16,7 +16,7 @@ if (fs.existsSync(outputFileName)) fs.unlinkSync(outputFileName);
 const operation = (lines, forkNumber) =>
    new Promise((resolve, reject) => {
       try {
-         const compute = fork(path.resolve(__dirname, 'translate.js'));
+         const compute = fork(path.resolve(__dirname, 'helpers', 'translate.js'));
          compute.send({ lines, forkNumber, isAlgo });
          compute.on('message', result => {
             resolve(result);
